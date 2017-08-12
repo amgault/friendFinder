@@ -12,7 +12,7 @@ var PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.json({ type: "application/json" }));
 
 //require the api routes file to get the routing setup for api's
 require('./app/routing/apiRoutes.js')(app);
