@@ -158,10 +158,9 @@
                 </div>
                 <div class="modal-body">
                     <p id="js-matchName"></p>
-                    <img id="js-matchImg">
+                    <img id="js-matchImg" style="width:50px; height:50px">
                 </div>
                 <div class="modal-footer">
-                    <!--button type="button" class="btn btn-primary">Save changes</button-->
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
                 </div>
@@ -193,7 +192,7 @@
             scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(),
                     $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         }
-        console.log(newUser.scores);
+
         $.post("/api/friends", newUser)
             .done(function(data){
                 $('#js-matchName').text(data.name);
