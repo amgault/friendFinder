@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/amgault/friendFinder/issues"
   },
-  "homepage": "https://github.com/amgault/friendFinder#readme"
+  "homepage": "https://github.com/amgault/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "path": "^0.12.7"
+  }
 }
